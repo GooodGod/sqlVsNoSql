@@ -66,10 +66,21 @@ Elements styles
     width: fit-content;
   }
 
-  .scroll-to-top-btn span:hover{
+  .scroll-to-top-btn span{
     padding: 4px;
+  }
+
+  .scroll-to-top-btn span:hover{
     color: white!important;
     background-color: cornflowerblue;
     width: fit-content;
     cursor: pointer;
+  }
+
+  .navbar-brand{
+    padding: 4px;
+  }
+
+  .navbar-brand:hover, .nav-link:hover{
+    background-color: cornflowerblue;
   }
