@@ -17,6 +17,10 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    cursor: pointer;
+}
+
 /*
 Elements styles
 */
