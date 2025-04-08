@@ -24,25 +24,47 @@ Elements styles
     fill: white;
 }  
 
-.splide__progress__bar {
-    height: 3px;
-    background: #ccc;
+
+.header-link:hover, .learn-more-btn{
+    background-color: cornflowerblue;
+
 }
 
-.hero-slider .slider-track .slide-list .slide .slide-content{
-    height: 50vh;
-    position: relative;
+#basics{
+    margin-top: 72px;
 }
+  
+  .carousel {
+    margin-bottom: 1rem;
+  }
 
-.slide-overlay-text{
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 25%);
-}
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
 
-.slide-bg-image{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+  .text-title{
+    padding: 4px;
+    background-color: cornflowerblue;
+    color: white;
+    width: fit-content;
+  }
+
+  .scroll-to-top-btn span:hover{
+    padding: 4px;
+    color: white!important;
+    background-color: cornflowerblue;
+    width: fit-content;
+    cursor: pointer;
+  }
