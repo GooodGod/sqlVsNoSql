@@ -39,7 +39,61 @@
 
                 <p>Na tej stronie omówimy temat rozwoju baz danych jako takich, pojawienia i zmiany różnych typów i modelów baz danych.</p>
                 <hr>
-                <p>TUTAJ BĘDZIE TREŚĆ ARTYKUŁU</p>
+                <h5>System zarządzania bazami danych (DBMS) to kompleksowy zestaw narzędzi, procedur i mechanizmów służący do efektywnego projektowania, tworzenia, utrzymywania, organizowania i monitorowania baz danych. Jego fundamentalnym celem jest zapewnienie integralności, bezpieczeństwa i dostępności przechowywanych danych, dzięki czemu Twoja organizacja będzie skutecznie funkcjonować.   </h5>
+                <h3>Proces zarządzania bazami danych obejmuje kilka kluczowych aspektów. DBMS umożliwiają:  </h3>
+                <ul>
+                    <li>projektowanie struktury bazy danych, </li>
+                    <li>definiowanie relacji między różnymi rodzajami danych,</li>
+                    <li>ustalanie zasad organizacji informacji.</li>
+                </ul>
+                <p>W trakcie tworzenia bazy danych DBMS, zarządzaj procesem wprowadzania danych oraz zadbaj o ich spójność i poprawność. Utrzymywanie bazy danych obejmuje monitorowanie, optymalizację oraz dostosowywanie jej do zmieniających się potrzeb organizacji. </p>
+                
+                <h3>Najpopularniejsze rodzaje systemów do zarządzania bazami danych</h3><br>
+                <h4>Wyróżnia się główne typy systemów zarządzania bazami danych. Do najpopularniejszych zaliczają się m.in.:  </h4><br>
+                <h5>Hierarchiczny system zarządzania bazami danych </h5>
+                <p>Takie systemy cechują się wyjątkową strukturą, która przypomina gałęzie drzewa. W tym przypadku dane są połączone w relacji rodzic-dziecko. Dobrym przykładem hierarchicznego systemu zarządzania bazami danych jest IMS i rejestr systemu Windows stworzony przez firmę IBM.  </p>
+                <h5>Sieciowe systemy zarządzania bazami danych  </h5>
+                <p>Network DBMS to rodzaj systemu bazodanowego, który umożliwia modelowanie danych przy użyciu struktury grafu. W taki sposób możesz definiować wiele relacji rodzic-dziecko dla elementów danych. Główną cechą, charakteryzującą sieciowe DBMS jest elastyczność w tworzeniu powiązań między różnymi danymi.W sieciowym systemie DBMS dane są reprezentowane jako zbiór węzłów (rekordów) połączonych relacjami. Możesz tworzyć bardziej złożone struktury, gdzie jeden rekord jest powiązany z wieloma innymi rekordami, tworząc w ten sposób rozbudowane relacje. Dzięki temu sieciowe DBMS są bardziej elastyczne niż tradycyjne relacyjne bazy danych, zwłaszcza gdy dane mają skomplikowane wzorce relacyjne. </p>
+                <h5>Relacyjny system zarządzania bazami danych  </h5>
+                <p>RDBMS stanowi najczęściej stosowany rodzaj systemów bazodanowych. Kluczową cechą RDBMS jest sposób, w jaki przechowuje dane, czyli w formie tabel (relacji). Wykorzystując relacyjny system zarządzania bazą danych, możesz efektywnie gromadzić informacje.RDBMS używają języka SQL, do definiowania struktury danych, manipulacji danymi oraz wykonywania zapytań. SQL jest standardowym językiem zapytań, który umożliwia jednolite i zrozumiałe operacje na bazie danych, niezależnie od konkretnego RDBMS. Dzięki temu programiści i administratorzy baz danych mogą łatwo pracować z różnymi systemami bazodanowymi. </p>
+                <h5>Obiektowy system zarządzania bazami danych </h5>
+                <p>OODBMS to rodzaj systemu bazodanowego, który integruje koncepcje baz danych i programowania obiektowego. Kluczową cechą OODBMS jest zdolność do bezproblemowego przechowywania i zarządzania obiektami programowymi. Używając OODBMS masz możliwość naturalnego odwzorowania struktury danych, stosowanej w programowaniu obiektowym. W przeciwieństwie do relacyjnych baz danych, OODBMS przechowuje dane w formie obiektów, które są instancjami klas obiektowych. Każdy obiekt może zawierać atrybuty i metody. OODBMS są szczególnie przydatne w obszarach, gdzie dane posiadają skomplikowane struktury i są silnie powiązane z programowaniem obiektowym. </p>
+                <h5>NoSQL DBMS </h5>
+                <p>Bazy danych NoSQL, czyli nierelacyjne systemy zarządzania bazami danych stanowią odpowiedź na potrzeby obsługi danych nieustrukturyzowanych lub częściowo ustrukturyzowanych. Charakteryzują się zazwyczaj skalowalnością poziomą, co oznacza, że są zdolne do łatwego rozszerzania poprzez dodawanie nowych maszyn do systemu oraz prostymi metodami manipulacji danymi. NoSQL DBMS nie opierają się na tradycyjnych relacyjnych modelach danych. Zamiast tego, są projektowane do obsługi różnorodnych struktur danych.  </p>
+                <h5>NewSQL DBMS </h5>
+                <p>Bazy danych NewSQL to poniekąd próba zjednoczenia korzyści, wynikających zarówno z relacyjnych baz danych, jak i baz NoSQL. Ich głównym celem jest dostarczenie możliwości wykonywania zapytań, opartych na języku SQL, charakterystycznych dla tradycyjnych relacyjnych baz danych, jednocześnie zachowując silną spójność danych oraz korzystając z elastyczności i skalowalności, które oferuje środowisko baz danych NoSQL. Bazy danych NewSQL stawiają sobie za zadanie rozwiązywanie problemów związanych z wydajnością i skalowalnością, które mogą występować w tradycyjnych relacyjnych bazach danych w kontekście obsługi dużych i dynamicznych zbiorów danych. </p>
+                <br>
+                <h4>Elementy systemu DBMS </h4>
+                <p>DBMS został stworzony, aby ułatwić Ci wydajną interakcję pomiędzy bazami danych, a użytkownikami czy aplikacjami. Chcąc to osiągnąć, twórcy powiązali ze sobą systemy przy pomocy współpracujących ze sobą komponentów. Zaliczają się do nich:  </p>
+                <ul>
+                    <li>Silnik bazy danych – serce każdego systemu zarządzania bazami danych. Odpowiada za przechowywanie, a także wyszukiwanie danych.</li>
+                    <li>Definicja danych – komponent ten odpowiedzialny jest za tworzenie, modyfikowanie i usuwanie obiektów w bazach danych, na przykład tabeli.  </li>
+                    <li>Manipulacja danymi – zapewnia ona różne możliwości interakcji z danymi, znajdującymi się w wybranej bazie.  </li>
+                    <li>Schemat bazy danych – definiuje strukturę i tabele bazy danych.  </li>
+                    <li>Menedżer przechowywania – dzięki niemu możesz zarządzać pamięcią bazy danych.  </li>
+                    <li>Procesor zapytań – procesor zapytań interpretuje i optymalizuje zapytania SQ, jak i inne zapytania.  </li>
+                    <li>Zarządzanie transakcjami – dzięki niemu utrzymasz integrację i spójność bazy danych.  </li>
+                </ul>
+                <h3>Funkcje systemów zarządzania bazami danych  </h3>
+                <p>Systemy zarządzania bazami danych (DBMS) są specjalnie zaprojektowanymi programami komputerowymi, które mają wiele przydatnych funkcji, a dokładnie:  </p>   
+                <ul>
+                    <li>Data Definition – pozwala na definiowanie struktury danych w bazie, tworzenie tabel, określanie typów danych, indeksów, kluczy głównych, ograniczeń integralności, widoków i innych elementów. </li>
+                    <li>Data Manipulation – umożliwia wykonywanie operacji na danych, a w tym dodawanie, usuwanie, modyfikowanie i pobieranie danych. Operacje te są zazwyczaj wykonywane za pomocą języka zapytań SQL (Structured Query Language). </li>
+                    <li>Querying – pozwala na formułowanie zapytań do bazy danych w celu uzyskania określonych informacji. Systemy zarządzania bazami danych w przypadku zapytań najczęściej operują językiem SQL.  </li>
+                    <li>Transaction Management – zarządzanie transakcjami, czyli operacjami, które muszą zostać wykonane jako jedna spójna całość. DBMS musi zagwarantować, że transakcja zostanie wykonana w całości lub w ogóle nie zostanie wykonana. Wszystko po to, aby uniknąć utraty integralności danych. </li>
+                    <li>Data Security – zapewnia kontrolę dostępu do danych, uwierzytelnianie użytkowników, zarządzanie uprawnieniami i ochronę przed nieautoryzowanym dostępem do informacji. </li>
+                    <li>Data Integrity Control – DBMS dba o integralność danych, co oznacza, że dane muszą być zgodne z określonymi regułami i ograniczeniami, aby uniknąć sytuacji, w której baza zawiera sprzeczne lub niepoprawne informacje. </li>
+                    <li>Query Optimization – systemy zarządzania bazami danych starają się zoptymalizować wykonanie zapytań, aby uzyskać jak najwyższą wydajność, co może obejmować tworzenie planów wykonania, indeksowanie i buforowanie danych. </li>
+                    <li>Concurrency Control – zarządzanie jednoczesnym dostępem wielu użytkowników do bazy danych, tak aby uniknąć konfliktów i utrzymać spójność danych. </li>
+                    <li>Backup and Recovery – zapewnia funkcje tworzenia kopii zapasowych danych oraz przywracania bazy danych do wcześniejszego stanu w przypadku awarii systemu lub utraty danych. </li>
+                    <li>Distributed Data Processing – w przypadku systemów baz danych rozproszonych DDP umożliwia zarządzanie danymi, które są przechowywane na wielu fizycznie oddzielonych serwerach. </li>
+                </ul><br>
+                <p>Dzięki wszechstronnym funkcjom, systemy zarządzania bazami danych mogą być wykorzystywane m.in. do analizy skuteczności wprowadzanych innowacji technologicznych. Są również nieocenione w kontekście database marketingu oraz wszelkich działaniach, opierających się na danych.</p>
+
+
+
+
+
         </div>
 
         <div class="col-md-4">

@@ -42,7 +42,64 @@
                 <p>Na tej stronie omówimy co i kiedy jest lepsze, za czym przyszłość i czy warto wybierać
                     tylko coś jedne?</p>
                 <hr>
-                <p>TUTAJ BĘDZIE TREŚĆ ARTYKUŁU</p>
+                    <h2>Czym jest baza danych SQL (relacyjna baza danych)?</h2>
+                    <p>
+                    Baza danych SQL jest relacyjną bazą danych, która używa Strukturalnego Języka Zapytań (SQL) do przechowywania, pobierania i manipulowania danymi. Kwalifikuje się ona jako język programowania. Bazy danych SQL są najbardziej rozpowszechnionym typem relacyjnych baz danych i są wykorzystywane przez wiele różnych firm i organizacji.
+                    Bazy danych SQL (Structured Query Language) są łatwe w użyciu i utrzymaniu oraz oferują wiele cech, które sprawiają, że dobrze nadają się do różnych zastosowań. Na przykład, bazy danych SQL zapewniają następujące cechy:
+                    </p>
+                <ul>
+                    <li>Solidne bezpieczeństwo danych</li>
+                    <li>Skalowalność</li>
+                    <li>Wysoką wydajność</li>
+                    <li>Łatwość użytkowania</li>
+                </ul>
+                <h4>Zalety korzystania z SQL</h4>
+                <ul>
+                <li>Spójność danych: SQL zapewnia transakcje ACID (Atomicity, Consistency, Isolation, Durability), co gwarantuje spójność i integralność danych. Każda transakcja jest przeprowadzana w całości, albo wcale, co minimalizuje ryzyko błędów.</li>
+                <li>Bogate wsparcie dla relacji: SQL świetnie nadaje się do modelowania skomplikowanych relacji między danymi. Integracja obiektów za pomocą kluczy obcych i złożone zapytania złączeń są dużym atutem RDBMS.</li>
+                </ul>
+                <h4>Dlaczego warto wybrać SQL</h4>
+                <ul>
+                    <li>Dojrzałość technologii: SQL istnieje od wielu lat, co sprawia, że jest dobrze zrozumiany i szeroko wspierany przez liczne narzędzia i platformy.</li>
+                    <li>Wsparcie narzędziowe: Istnieje mnóstwo narzędzi i aplikacji dedykowanych do pracy z bazami SQL, co znacznie ułatwia zarządzanie, monitorowanie i optymalizację tych baz.</li>
+                </ul>
+
+                <h2>Czym jest baza danych NoSQL (nierelacyjna baza danych)?</h2>
+                <p>Baza danych NoSQL to nierelacyjna baza danych, która nie wykorzystuje tradycyjnej struktury tabelarycznej relacyjnych baz danych. Bazy danych NoSQL są często wykorzystywane do obsługi dużych ilości danych, które nie są dobrze dopasowane do modelu relacyjnego.</p>
+                
+                <h3>Bazy danych NoSQL można podzielić na cztery główne kategorie:</h3><br>
+                <h4>Magazyny wartości kluczowych</h4>
+                <p>Baza danych NoSQL przechowuje dane w sposób pozbawiony schematu jako zbiór par klucz-wartość. Wartość, którą może być wszystko, od prostego tekstu do bardziej skomplikowanej struktury danych, jest wyszukiwana przy użyciu klucza. Przykłady magazynów wartości kluczowych obejmują DynamoDB i Riak</p>
+                <h4>Magazyny zorientowane na kolumny</h4>
+                <p>Przechowują one dane w kolumnach, a nie w wierszach. Magazyny zorientowane na kolumny są często używane w hurtowniach danych i aplikacjach analitycznych. Przykłady sklepów zorientowanych na kolumny obejmują Cassandra i HBase.</p>
+                <h4>Magazyny dokumentów</h4>
+                <p>W takich bazach NoSQL dane są przechowywane w dokumentach. Dokumenty mogą być ustrukturyzowane w dowolny sposób, co czyni je bardzo elastycznymi. Przykładami magazynów dokumentów są MongoDB i Couchbase.</p>
+                <h4>Magazyny grafów</h4>
+                <p>Te bazy danych przechowują dane w strukturze grafu, z węzłami i krawędziami łączącymi dane. Magazyny grafów są często używane w aplikacjach, które muszą analizować złożone relacje. Przykładami sklepów grafowych są Neo4j oraz OrientDB.</p>
+                
+                <h3>Zalety korzystania z NoSQL</h3>
+                <ul>
+                    <li>Elastyczność schematów: NoSQL pozwala na przechowywanie danych bez konieczności definiowania z góry stałego schematu, co ułatwia jej rozbudowę i modyfikację.</li>
+                    <li>Szybkość operacji: W niektórych przypadkach NoSQL oferuje wyższą wydajność operacji, zwłaszcza dla aplikacji działających na dużą skalę, dzięki możliwości poziomej skalowalności.</li>
+                </ul>
+
+                <h3>Dlaczego warto wybrać NoSQL</h3>
+                <ul>
+                    <li>Dynamiczne dane: Jeśli Twoja aplikacja często zmienia strukturę danych, baza NoSQL, która nie wymaga sztywnego schematu, będzie bardziej odpowiednia.</li>
+                    <li>Wysoka dostępność i wydajność: Systemy NoSQL są zaprojektowane, aby działać poprawnie nawet w sytuacjach awaryjnych. Są one optymalizowane dla wysokiej dostępności i odporności na błędy.</li>
+                </ul>
+                <img src="/src/img/versus.png">
+                <h2>Główne różnice</h2>
+                <ol>
+                    <li>Bazy danych SQL są relacyjnymi bazami danych. Oznacza to, że dane są zorganizowane w tabelach, a każda tabela ma określoną strukturę. Tabele są połączone ze sobą poprzez relacje. To sprawia, że bazy SQL są bardzo wydajne w przechowywaniu danych, do których trzeba mieć dostęp w określony sposób.</li><br>
+                    <li>Bazy danych NoSQL są nierelacyjnymi bazami danych. Oznacza to, że dane są przechowywane w kolekcji dokumentów. Nie ma określonej struktury tych dokumentów i nie są one połączone ze sobą poprzez relacje. Są więc bardziej odpowiednie do przechowywania danych, które nie muszą być dostępne w określony sposób.</li><br>
+                    <li>Jedną z głównych różnic między bazami danych SQL i NoSQL jest sposób ich skalowania. Bazy danych SQL używają pionowego podejścia do skalowania, co oznacza, że skalują się poprzez dodanie większej mocy do serwera. Bazy danych NoSQL wykorzystują podejście skalowania poziomego, co oznacza, że skalują się poprzez dodawanie kolejnych serwerów.</li><br>
+                    <li>Kolejną różnicą jest to, że bazy danych SQL są zazwyczaj droższe w utrzymaniu niż bazy danych NoSQL. Bazy danych SQL wymagają więcej administracji, takich jak tworzenie i utrzymywanie indeksów i widoków. Bazy NoSQL są często mniej kosztowne, ponieważ wymagają mniejszej administracji.</li><br>
+                    <li>Bazy danych SQL są również zazwyczaj bardziej złożone niż bazy danych NoSQL. Dzieje się tak, ponieważ bazy danych SQL muszą przestrzegać zasad ACID (atomowość, spójność, izolacja i trwałość), co może sprawić, że będą wolniejsze i bardziej skomplikowane. Z drugiej strony, bazy danych NoSQL są często bardziej proste i mogą być szybsze, ponieważ nie muszą przestrzegać reguł ACID.</li><br>
+                </ol>
+                
+
+
         </div>
 
         <div class="col-md-4">
