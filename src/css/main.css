@@ -29,20 +29,51 @@ Elements styles
     background: #ccc;
 }
 
-.hero-slider .slider-track .slide-list .slide .slide-content{
-    height: 50vh;
-    position: relative;
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+  }
+
+  .text-title{
+    padding: 4px;
+    background-color: cornflowerblue;
+    color: white;
+    width: fit-content;
+  }
+
+  .scroll-to-top-btn span{
+    padding: 4px;
+  }
+
+  .scroll-to-top-btn span:hover{
+    color: white!important;
+    background-color: cornflowerblue;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .navbar-brand{
+    padding: 4px;
+  }
+
+  .navbar-brand:hover, .nav-link:hover{
+    background-color: cornflowerblue;
+  }
+
+.homepage-article-img{
+  padding: 24px;
 }
 
-.slide-overlay-text{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 25%);
-}
-
-.slide-bg-image{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.homepage-slider-img{
+  opacity: .25;
 }
