@@ -20,15 +20,6 @@ body{
 Elements styles
 */
 
-#project-icon path{
-    fill: white;
-}  
-
-.splide__progress__bar {
-    height: 3px;
-    background: #ccc;
-}
-
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
@@ -55,6 +46,15 @@ Elements styles
     padding: 4px;
   }
 
+  .learn-more-btn{
+    background-color: cornflowerblue;
+  }
+
+  .learn-more-btn:hover{
+    background-color: white;
+    color: cornflowerblue!important;
+  }  
+
   .scroll-to-top-btn span:hover{
     color: white!important;
     background-color: cornflowerblue;
@@ -68,6 +68,7 @@ Elements styles
 
   .navbar-brand:hover, .nav-link:hover{
     background-color: cornflowerblue;
+    cursor: pointer;
   }
 
 .homepage-article-img{
@@ -76,4 +77,12 @@ Elements styles
 
 .homepage-slider-img{
   opacity: .25;
+}
+
+.sidebar-list li:hover{
+  transform: scale(1.1);
+}
+
+.sidebar-img{
+  max-width: 136px;
 }
