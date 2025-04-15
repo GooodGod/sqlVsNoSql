@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script src="https://kit.fontawesome.com/27e046be36.js" crossorigin="anonymous"></script>
+    <title>SQl vs NoSQL - Zastosowania praktyczne</title>
+</head>
+
+<body class="bg-white">
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Bazy Danych SQL vs NoSQL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" target="_blank"
+                                href="https://github.com/GooodGod/sqlVsNoSql">GitHub <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row g-5 py-4 px-4">
+        <div class="col-md-8">
+            <article class="blog-post">
+                <h2 class="blog-post-title">Zastosowania praktyczne</h2>
+                <p class="blog-post-meta">Wybierz typ BD, aby zobaczyć, gdzie jest stosowany:</p>
+                <div class="display-inline tab-switch-container">
+                    <button class="tab-switch active" data-tab="1">Relacyjne</button>
+                    <button class="tab-switch" data-tab="2">Nierelacyjne</button>
+                </div>
+                <hr>
+                <h4 class="text-title">UWAGA!</h4>
+                <p class="m-auto mb-4">
+                    Wiele firm korzysta z więcej niż jednej bazy danych – np. relacyjnych dla systemów
+                    transakcyjnych i nierelacyjnych (NoSQL) dla danych analitycznych. Nasza grupa uważa, że takie
+                    hybrydowe podejście jest najlepszym rozwiązaniem, a zamiast kolejnego sporu o tym, które bazy mają
+                    przyszłość, warto nauczyć się pracować z obydwoma typami BD. Zrobić to można np. za pomocą <a href="/article/managementSystems.html#instruction" target="_blank">instrukcji na stronie SZBD <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </p>
+                <div class="tab active" data-tab="1">
+                    <h4 class="text-title">Relacyjne bazy danych – przegląd</h4>
+                    <p class="m-auto">
+                        Relacyjne bazy danych przechowują dane w postaci tabel powiązanych ze sobą za pomocą kluczy
+                        głównych i obcych. Umożliwiają wykonywanie złożonych zapytań SQL oraz zapewniają wysoką spójność
+                        danych. Przykłady popularnych relacyjnych baz danych:
+                    </p>
+                    <ul class="mb-4">
+                        <li>MySQL – baza danych, wykorzystywana w aplikacjach webowych i systemach e-commerce. Ma także
+                            darmowy analog MariaDB.</li>
+                        <li>PostgreSQL – zaawansowana baza danych obsługująca dane przestrzenne (GIS), często używana w
+                            analizach geograficznych.</li>
+                        <li>Oracle Database – wykorzystywana w dużych przedsiębiorstwach i instytucjach finansowych.
+                        </li>
+                        <li>Microsoft SQL Server – popularna baza danych w środowisku Windows, używana w systemach ERP i
+                            CRM</li>
+                    </ul>
+                    <div class="table-responsive mb-4">
+                        <table class="table table-dark table-hover">
+                            <caption><b>Tabela 4. Firmy, używające relacyjnych baz danych</b></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Firma</th>
+                                    <th scope="col">Branża</th>
+                                    <th scope="col">Nazwa BD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Bank of America</th>
+                                    <td>Bankowa</td>
+                                    <td>Oracle DB, MS SQL Server</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Allegro</th>
+                                    <td>E-Commerce</td>
+                                    <td>PostgreSQL, MySQL</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">GitLab</th>
+                                    <td>Zarządzanie wersjami projektu</td>
+                                    <td>PostgreSQL</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MediCover</th>
+                                    <td>Zdrowie i medycyna</td>
+                                    <td>Oracle Database, PostgreSQL</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ZUS</th>
+                                    <td>Sektor publiczny</td>
+                                    <td>Oracle Database</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4 class="text-title">Warto wiedzieć</h4>
+                <p class="m-auto">
+                    Często relacyjne bazy są też dostępne w wersjach chmurowych, np. Amazon Aurora (zgodny z PostgreSQL
+                    i MySQL), Azure SQL, Oracle Cloud.
+                </p>
+                </div>
+
+                <div class="tab" data-tab="2">
+                    <h4 class="text-title">Nierelacyjne bazy danych – przegląd</h4>
+                    <p class="m-auto">
+                        Nierelacyjne bazy danych (NoSQL) umożliwiają przechowywanie danych o elastycznej strukturze,
+                        takich jak dokumenty, pary klucz-wartość, dane grafowe czy kolumnowe. Pozwalają na szybkie
+                        skalowanie i wysoką wydajność przy pracy z dużą ilością danych.
+                        Przykłady popularnych baz NoSQL:
+                    </p>
+                    <ul class="mb-4">
+                        <li>MongoDB – baza dokumentowa, idealna do przechowywania danych w formacie JSON.</li>
+                        <li>Redis – baza klucz-wartość, szybka i lekka, często używana jako pamięć podręczna.</li>
+                        <li>Apache Cassandra – baza kolumnowa, stworzona do pracy z rozproszonymi danymi na dużą skalę.
+                        </li>
+                        <li>Neo4j – baza grafowa, służąca do przechowywania i analizy złożonych relacji między danymi.
+                        </li>
+                    </ul>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover">
+                            <caption><b>Tabela 5. Firmy, używające nierelacyjnych baz danych</b></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Firma</th>
+                                    <th scope="col">Branża</th>
+                                    <th scope="col">Nazwa BD</th>
+                                    <th scope="col">Typ NoSQL BD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Amazon</th>
+                                    <td>E-Commerce</td>
+                                    <td>DynamoDB, Redis</td>
+                                    <td>Key-Value, In-memory</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Facebook</th>
+                                    <td>Media społecznościowe</td>
+                                    <td>Cassandra, RocksDB</td>
+                                    <td>Kolumnowa, Key-Value</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Amazon Web Services</th>
+                                    <td>Serwisy chmurowe</td>
+                                    <td>DynamoDB, DocumentDB, ElastiCache i inne</td>
+                                    <td>Róźne</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Roblox</th>
+                                    <td>Gaming</td>
+                                    <td>MongoDB</td>
+                                    <td>Dokumentowa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CERN</th>
+                                    <td>Nauka</td>
+                                    <td>HBase, Cassandra</td>
+                                    <td>Kolumnowa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">O tej stronie</h4>
+                    <p class="mb-0">Tutaj dowiesz się o zastosowaniach praktycznych dla każdego typu baz danych. Które
+                        firmy wykorzystują które BD i dlaczego?
+                        <br><br>
+                        <i>Opowiedź przygotowali: Volodymyr Fylypiv, Database of Databases i ChatGPT v3</i>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="fst-italic">Interesuje Ci coś innego?</h4>
+                    <ul class="list-unstyled sidebar-list">
+                        <li>
+                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                href="/article/historyOfDatabases.html">
+                                <img src="/src/img/homepage_slider_1.jpeg" alt="Historia baz danych"
+                                    class="bd-placeholder-img sidebar-img">
+                                <div class="col-lg-8">
+                                    <h6 class="mb-0">Historia baz danych</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                href="/article/sqlVsNoSqlComparison.html">
+                                <img src="/src/img/homepage_slider_2.jpeg" alt="SQL vs NoSQL"
+                                    class="bd-placeholder-img sidebar-img">
+                                <div class="col-lg-8">
+                                    <h6 class="mb-0">SQL vs NoSQL</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                href="/article/playground.html">
+                                <img src="/src/img/homepage_slider_3.jpeg" alt="Playground"
+                                    class="bd-placeholder-img sidebar-img">
+                                <div class="col-lg-8">
+                                    <h6 class="mb-0">Playground</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                                href="/article/managementSystems.html">
+                                <img src="/src/img/homepage_slider_4.jpeg" alt="SZBD"
+                                    class="bd-placeholder-img sidebar-img">
+                                <div class="col-lg-8">
+                                    <h6 class="mb-0">SZBD</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row featurette">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading scroll-to-top-btn"><span class="text-muted">Powrót na
+                    górę</span></h2>
+        </div>
+    </div>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="/src/js/main.js"></script>
+    </footer>
+</body>
+
+</html>
