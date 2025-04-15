@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/sqlVsNoSql/src/css/main.css">
     <script src="https://kit.fontawesome.com/27e046be36.js" crossorigin="anonymous"></script>
     <title>SQl vs NoSQL - Systemy zarządzania bazami danych</title>
 </head>
@@ -15,7 +15,7 @@
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Bazy Danych SQL vs NoSQL</a>
+                <a class="navbar-brand" href="/sqlVsNoSql/index.html">Bazy Danych SQL vs NoSQL</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -105,7 +105,7 @@
                     W oknie, które się otrwórzyło, wpisujemy nazwę bazy w polu "Database name" i wybieramy z listy typ kodowania.
                     Tworymy bazę kliknięciem przycisku "Create".
                 </p>
-                <img class="img-fluid mb-3" src="/src/img/databaseCreationUI.png" alt="Tworzenie BD za pomocą interfejsu graficznego">
+                <img class="img-fluid mb-3" src="/sqlVsNoSql/src/img/databaseCreationUI.png" alt="Tworzenie BD za pomocą interfejsu graficznego">
                 <p class="m-auto mb-4">
                     Żeby utworzyc BD w drugi sposób, w górnym menu klikamy przycisk "SQL".
                     W oknie, które się otrwórzyło, wpisujemy i puszczamy kwerendę:
@@ -113,7 +113,7 @@
                     
                     <i>CREATE DATABASE [nazwa bazy] COLLATE [typ kodowania];</i>
                 </p>
-                <img class="img-fluid mb-4" src="/src/img/databaseCreationSQL.png" alt="Tworzenie BD za pomocą SQL">
+                <img class="img-fluid mb-4" src="/sqlVsNoSql/src/img/databaseCreationSQL.png" alt="Tworzenie BD za pomocą SQL">
                 <h4>Tworzenie tabeli w bazie</h4>
                 <p class="m-auto mb-4">
                     Oprócz tworzenia tabeli za pomocą UI, które jest podobne do tworzenia bazy(jeszcze trzeba będzie wypełnić informacje o każdej kolumnie),
@@ -121,14 +121,14 @@
                     <br><br>
                     <i>CREATE TABLE [nazwa tabeli]( [dane kolumn - dalej przykładowe] id INT NOT NULL PRIMARY KEY, imie VARCHAR(100), nazwisko VARCHAR(100) );</i>
                 </p>
-                <img class="img-fluid mb-4" src="/src/img/tableCreationSQL.png" alt="Tworzenie tabeli w bazie">
+                <img class="img-fluid mb-4" src="/sqlVsNoSql/src/img/tableCreationSQL.png" alt="Tworzenie tabeli w bazie">
                 <h4>Dodawanie rekordów do tabeli</h4>
                 <p class="m-auto mb-4">
                     Na stronie "SQL" tabeli "uzytkownicy" wpisujemy i puszczamy następującą kwerendę:
                     <br><br>
                     <i>INSERT INTO [nazwa tabeli]([kolumny tabeli - dalej przykładowe] id, imie, nazwisko) VALUES[dane do wstawiania, kilka rekordów prze przycinek - dalej przykładowe] (1, "Stepan", "Honcharenko"),(2, "Volodymyr", "Fylypiv"),(3, "Ivan", "Burlaka");</i>
                 </p>
-                <img class="img-fluid mb-4" src="/src/img/addingRowsSQL.png" alt="Dodawanie rekordów do tabeli">
+                <img class="img-fluid mb-4" src="/sqlVsNoSql/src/img/addingRowsSQL.png" alt="Dodawanie rekordów do tabeli">
                 <h4>Wybór danych</h4>
                 <p class="m-auto mb-4">
                     Wybierzemy niektóre wpisane dane z tabeli.
@@ -136,14 +136,14 @@
                     <br><br>
                     <i>SELECT [kolumny które wybieramy - dalej przykładowe] imie, nazwisko FROM [nazwa tabeli] WHERE [OPCJONALNIE: warunki wyboru - dalej przykładowe] id > 1;</i>
                 </p>
-                <img class="img-fluid mb-4" src="/src/img/infoSelectionSQL.png" alt="Wybór danych">
+                <img class="img-fluid mb-4" src="/sqlVsNoSql/src/img/infoSelectionSQL.png" alt="Wybór danych">
                 <h4>Eksport bazy danych</h4>
                 <p class="m-auto mb-4">
                     Wyeksportujemy baze danych.
                     Na sidebarze wybieramy naszą bazę biblioteka, potem klikamy przycisk "Export" w górnym menu. 
                     Po tym po prostu klikamy przycisk "Export" na dole strony, baza danych będzie wyeksportowana w formacie .sql 
                     </p>
-                <img class="img-fluid mb-4" src="/src/img/dbExport.png" alt="Eksport BD">
+                <img class="img-fluid mb-4" src="/sqlVsNoSql/src/img/dbExport.png" alt="Eksport BD">
                 <p class="m-auto mb-4">
                     Dziękuję za uwagę. Mam nadzieję, że pomogłem Ci zapoznać się z podastawami zarządzania relacyjną BD. - <i>S. Honcharenko</i>
                     </p>
@@ -168,8 +168,8 @@
                     <ul class="list-unstyled sidebar-list">
                         <li>
                             <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                href="/article/historyOfDatabases.html">
-                                <img src="/src/img/homepage_slider_1.jpeg" alt="Historia baz danych"
+                                href="/sqlVsNoSql/article/historyOfDatabases.html">
+                                <img src="/sqlVsNoSql/src/img/homepage_slider_1.jpeg" alt="Historia baz danych"
                                     class="bd-placeholder-img sidebar-img">
                                 <div class="col-lg-8">
                                     <h6 class="mb-0">Historia baz danych</h6>
@@ -178,8 +178,8 @@
                         </li>
                         <li>
                             <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                href="/article/sqlVsNoSqlComparison.html">
-                                <img src="/src/img/homepage_slider_2.jpeg" alt="SQL vs NoSQL"
+                                href="/sqlVsNoSql/article/sqlVsNoSqlComparison.html">
+                                <img src="/sqlVsNoSql/src/img/homepage_slider_2.jpeg" alt="SQL vs NoSQL"
                                     class="bd-placeholder-img sidebar-img">
                                 <div class="col-lg-8">
                                     <h6 class="mb-0">SQL vs NoSQL</h6>
@@ -188,8 +188,8 @@
                         </li>
                         <li>
                             <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                href="/article/playground.php">
-                                <img src="/src/img/homepage_slider_3.jpeg" alt="Playground"
+                                href="/sqlVsNoSql/article/playground.php">
+                                <img src="/sqlVsNoSql/src/img/homepage_slider_3.jpeg" alt="Playground"
                                     class="bd-placeholder-img sidebar-img">
                                 <div class="col-lg-8">
                                     <h6 class="mb-0">Playground</h6>
@@ -198,8 +198,8 @@
                         </li>
                         <li>
                             <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                                href="/article/practicalUsage.html">
-                                <img src="/src/img/homepage_slider_5.jpeg" alt="Zastosowania praktyczne"
+                                href="/sqlVsNoSql/article/practicalUsage.html">
+                                <img src="/sqlVsNoSql/src/img/homepage_slider_5.jpeg" alt="Zastosowania praktyczne"
                                     class="bd-placeholder-img sidebar-img">
                                 <div class="col-lg-8">
                                     <h6 class="mb-0">Zastosowania praktyczne</h6>
@@ -223,7 +223,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-        <script src="/src/js/main.js"></script>
+        <script src="/sqlVsNoSql/src/js/main.js"></script>
     </footer>
 </body>
 

@@ -113,3 +113,25 @@ Elements styles
 .text-img{
   max-width: 420px;
 }
+
+.playgroundForm{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 24px;
+}
+
+.playgroundForm button{
+  color: white;
+  border: 1px solid white;
+}
+
+.goBackBtn{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 16px;
+}
+
+.goBackBtn:hover{
+  background-color: white;
+  color: cornflowerblue;
+}
