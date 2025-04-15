@@ -25,24 +25,6 @@ a{
 Elements styles
 */
 
-#project-icon path{
-    fill: white;
-}  
-
-
-.header-link:hover, .learn-more-btn{
-    background-color: cornflowerblue;
-
-}
-
-#basics{
-    margin-top: 72px;
-}
-  
-  .carousel {
-    margin-bottom: 1rem;
-  }
-
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
@@ -56,7 +38,6 @@ Elements styles
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
   }
 
   .text-title{
@@ -69,6 +50,15 @@ Elements styles
   .scroll-to-top-btn span{
     padding: 4px;
   }
+
+  .learn-more-btn{
+    background-color: cornflowerblue;
+  }
+
+  .learn-more-btn:hover{
+    background-color: white;
+    color: cornflowerblue!important;
+  }  
 
   .scroll-to-top-btn span:hover{
     color: white!important;
@@ -83,4 +73,70 @@ Elements styles
 
   .navbar-brand:hover, .nav-link:hover{
     background-color: cornflowerblue;
+    cursor: pointer;
   }
+
+.homepage-article-img{
+  padding: 24px;
+}
+
+.homepage-slider-img{
+  opacity: .25;
+}
+
+.sidebar-list li:hover{
+  transform: scale(1.1);
+}
+
+.sidebar-img{
+  max-width: 136px;
+}
+
+.tab{
+  display: none;
+}
+
+.tab.active{
+  display: block;
+}
+
+.tab-switch-container{
+  margin-bottom: 16px;
+}
+
+.tab-switch{
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid cornflowerblue;
+}
+
+.tab-switch:hover, .tab-switch.active{
+  background-color: white;
+  color: cornflowerblue;
+}
+
+.text-img{
+  max-width: 420px;
+}
+
+.playgroundForm{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 24px;
+}
+
+.playgroundForm button{
+  color: white;
+  border: 1px solid white;
+}
+
+.goBackBtn{
+  background-color: cornflowerblue;
+  color: white;
+  padding: 16px;
+}
+
+.goBackBtn:hover{
+  background-color: white;
+  color: cornflowerblue;
+}
