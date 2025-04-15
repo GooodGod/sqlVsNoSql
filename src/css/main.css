@@ -86,3 +86,30 @@ Elements styles
 .sidebar-img{
   max-width: 136px;
 }
+
+.tab{
+  display: none;
+}
+
+.tab.active{
+  display: block;
+}
+
+.tab-switch-container{
+  margin-bottom: 16px;
+}
+
+.tab-switch{
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid cornflowerblue;
+}
+
+.tab-switch:hover, .tab-switch.active{
+  background-color: white;
+  color: cornflowerblue;
+}
+
+.text-img{
+  max-width: 420px;
+}
